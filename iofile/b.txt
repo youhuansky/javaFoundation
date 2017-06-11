@@ -1,0 +1,4 @@
+bus
+plane
+train
+bike

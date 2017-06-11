@@ -1,0 +1,8 @@
+apple
+bus
+pear
+plane
+pineapple
+train
+watermalen
+bike
