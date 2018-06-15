@@ -21,7 +21,7 @@ public class Dom4JTest {
 	@Test
 	public void test2() throws DocumentException {
 		SAXReader saxReader = new SAXReader();
-		Document read = saxReader.read(new File("D:\\mywork\\javacode\\WorkSpace\\javaFoundation\\src\\stu.xml"));
+		Document read = saxReader.read(new File("src/stu.xml"));
 		List<Element> selectSingleNode = (List<Element>)read.selectNodes("/students/student");
 		for (Element element : selectSingleNode) {
 			System.out.println(element.elementText("name"));
@@ -31,7 +31,7 @@ public class Dom4JTest {
 	@Test
 	public void test1() throws DocumentException {
 		SAXReader saxReader = new SAXReader();
-		Document read = saxReader.read(new File("D:\\mywork\\javacode\\WorkSpace\\javaFoundation\\src\\stu.xml"));
+		Document read = saxReader.read(new File("src/stu.xml"));
 		Element rootElement = read.getRootElement();
 		List<Element> elements = (List<Element>) rootElement.elements("student");
 		for (Element element : elements) {
